@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *codeNumber;
 @property (weak, nonatomic) IBOutlet UILabel *barCode;
 
