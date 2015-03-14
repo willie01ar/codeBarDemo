@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D98g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRounded-Bold.ttf">
+            <string>GothamRounded-Bold</string>
+            <string>GothamRounded-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-gQ-tOj">
+                                <rect key="frame" x="16" y="62" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="QWf-1n-SAS"/>
+                                    <constraint firstAttribute="height" constant="30" id="f4a-SU-HW5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Unb-iE-LgT">
+                                <rect key="frame" x="89" y="62" width="495" height="30"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Bold" family="Gotham Rounded" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="45" translatesAutoresizingMaskIntoConstraints="NO" id="WCg-oO-wIl">
+                                <rect key="frame" x="16" y="116" width="568" height="90"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82D-DQ-pht">
+                                <rect key="frame" x="281" y="238" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fnZ-fE-tmg"/>
+                                </constraints>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBarCode:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="knd-wg-uFo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Unb-iE-LgT" firstAttribute="bottom" secondItem="zD4-gQ-tOj" secondAttribute="bottom" id="20k-EW-Oht"/>
+                            <constraint firstItem="WCg-oO-wIl" firstAttribute="leading" secondItem="zD4-gQ-tOj" secondAttribute="leading" id="5nE-JZ-3iZ"/>
+                            <constraint firstItem="WCg-oO-wIl" firstAttribute="top" secondItem="Unb-iE-LgT" secondAttribute="bottom" constant="24" id="BrL-qB-uTb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="82D-DQ-pht" secondAttribute="bottom" constant="332" id="QZz-Oj-atz"/>
+                            <constraint firstItem="Unb-iE-LgT" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Rf6-Cz-ZTQ"/>
+                            <constraint firstItem="Unb-iE-LgT" firstAttribute="trailing" secondItem="WCg-oO-wIl" secondAttribute="trailing" id="aKf-cv-UF8"/>
+                            <constraint firstItem="zD4-gQ-tOj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="esA-4m-QFg"/>
+                            <constraint firstItem="Unb-iE-LgT" firstAttribute="leading" secondItem="zD4-gQ-tOj" secondAttribute="trailing" constant="8" id="gpa-Tk-8Bu"/>
+                            <constraint firstItem="zD4-gQ-tOj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="42" id="hGf-9v-DOs"/>
+                            <constraint firstItem="82D-DQ-pht" firstAttribute="centerX" secondItem="WCg-oO-wIl" secondAttribute="centerX" id="mZZ-1h-VcC"/>
+                            <constraint firstItem="82D-DQ-pht" firstAttribute="top" secondItem="WCg-oO-wIl" secondAttribute="bottom" constant="32" id="soe-Gb-SrZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="barCode" destination="WCg-oO-wIl" id="6Li-wr-vBH"/>
+                        <outlet property="codeNumber" destination="Unb-iE-LgT" id="MyE-AD-FzO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="291" y="330"/>
+        </scene>
+    </scenes>
+</document>
